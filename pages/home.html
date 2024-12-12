@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- SVG Inject -->
+    <script src="/js/svg-inject.js"></script>
+
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/index.css" />
+
+    <!-- Main Informations -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial – Elefy</title>
+</head>
+
+<body class="!scroll-smooth antialiased text-black bg-white">
+    <main class="px-6 flex flex-col items-start justify-start h-screen w-full relative">
+        <!-- Menu -->
+        <nav class="fixed bottom-0 left-0 h-fit w-full bg-neutral-50 flex items-center justify-between px-6 pt-7 pb-10">
+            <!-- Home -->
+            <a class="flex size-11 items-center justify-center">
+                <i class="ri-home-5-fill text-[28px]/none"></i>
+            </a>
+
+            <!-- Wallet -->
+            <a class="flex size-11 items-center justify-center">
+                <i class="ri-wallet-3-line text-[28px]/none"></i>
+            </a>
+
+            <!-- Transactions -->
+            <a class="flex size-11 items-center justify-center">
+                <i class="ri-arrow-up-down-line text-[28px]/none"></i>
+            </a>
+
+            <!-- Wait List -->
+            <a class="flex size-11 items-center justify-center">
+                <i class="ri-bank-card-line text-[28px]/none"></i>
+            </a>
+        </nav>
+
+        <!-- Content -->
+        <section class="py-16 flex flex-col items-start gap-8 w-full">
+            <!-- Profile Section -->
+            <article class="flex items-center justify-between w-full">
+                <!-- Left -->
+                <div class="flex items-center gap-4">
+                    <!-- Avatar -->
+                    <div class="size-16 flex items-center justify-center bg-neutral-100 rounded-full">
+                        <i class="ri-user-6-line text-2xl/none"></i>
+                    </div>
+
+                    <!-- Infos -->
+                    <div class="flex flex-col items-start gap-1">
+                        <h1 class="text-lg/none font-medium">Olá, Ivan P.</h1>
+
+                        <span class="text-neutral-500">Bom dia!</span>
+                    </div>
+                </div>
+
+                <!-- Right -->
+                <div class="flex items-center justify-end gap-4">
+                    <!-- Hidden Values -->
+                    <i class="ri-eye-line text-2xl/none"></i>
+
+                    <!-- Notifications -->
+                    <i class="ri-notification-2-line text-2xl/none"></i>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
