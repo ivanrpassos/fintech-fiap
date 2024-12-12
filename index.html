@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- SVG Inject -->
+    <script src="/js/svg-inject.js"></script>
+
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/index.css" />
+
+    <!-- Main Informations -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial – Elefy</title>
+</head>
+
+<body class="!scroll-smooth antialiased text-black">
+    <main class="px-6 py-20 flex flex-col items-center justify-end h-screen w-full relative">
+        <!-- Card Element -->
+        <img class="absolute top-0 left-0 w-full" src="/svg/cards.svg" onload="SVGInject(this)" />
+
+        <!-- Icon -->
+        <i class="ri-question-line text-[28px]/none top-10 right-8 absolute"></i>
+
+        <!-- Content -->
+        <section class="flex flex-col items-center justify-center gap-10">
+            <!-- Top -->
+            <article class="flex flex-col gap-3 items-center justify-center">
+                <h1 class="text-[28px]/none font-semibold text-center">Bem-vindos a Elefy!</h1>
+
+                <span class="text-base/normal text-neutral-500 text-center">
+                    Eleve o seu controle financeiro dos seus
+                    cartões em um só lugar.
+                </span>
+            </article>
+
+            <!-- Buttons -->
+            <article class="flex flex-col gap-4 w-full">
+                <a href="/pages/login.html"
+                    class="flex items-center justify-center w-full h-14 rounded-[6px] font-medium bg-black text-white">
+                    Cadastrar
+                </a>
+
+                <a href="/pages/home.html"
+                    class="flex items-center justify-center w-full h-14 rounded-[6px] font-medium bg-neutral-200">
+                    Acessar Conta
+                </a>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
